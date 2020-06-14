@@ -22,7 +22,7 @@
 
 # Dependency directories and dependencies
 /vendor
-/node_modules
+**/node_modules
 /.pnp
 .pnp.js
 
