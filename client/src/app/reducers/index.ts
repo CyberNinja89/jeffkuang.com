@@ -31,4 +31,4 @@ const persisted = persistReducer<IRootState>(rootConfig, rootReducer);
 
 export const store = createStore(persisted, composeEnhancers(applyMiddleware(thunk)));
 
-// export type RootReducer = ReturnType<typeof rootReducer>;
+export type RootReducer = ReturnType<typeof rootReducer>;

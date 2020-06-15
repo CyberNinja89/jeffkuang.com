@@ -8,7 +8,7 @@ import { ADD_MESSAGE } from 'app/types/messages';
 
 const App: React.FC = () => {
 
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   return (
     <div className={styles["App"]}>

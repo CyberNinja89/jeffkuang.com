@@ -17,6 +17,7 @@
     "@types/react-router-dom": "^5.1.5",
     "@types/redux-form": "^8.2.6",
     "@types/redux-persist": "^4.3.1",
+    "@types/uuid": "^8.0.0",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "history": "^5.0.0",

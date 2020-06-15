@@ -18,9 +18,7 @@ interface AddMessageAction {
 
 interface RemoveMessageAction {
     type: typeof REMOVE_MESSAGE
-    meta: {
-        id: string
-    }
+    payload: string
 }
 
 export type MessageActionTypes = AddMessageAction | RemoveMessageAction

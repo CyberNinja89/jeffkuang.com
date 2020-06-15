@@ -19,11 +19,7 @@ export function messageReducer(
                 messages: [...state.messages, action.payload]
             }
         case REMOVE_MESSAGE:
-            return {
-                messages: state.messages.filter(
-                    message => message.id !== action.meta.id
-                )
-            }
+            return { messages: state.messages.filter(m => m.id !== action.payload) }
         default:
             return state
     }
