@@ -1,8 +1,15 @@
 import React from 'react';
-import logo from 'Images/logo.svg';
+import logo from 'assets/images/logo.svg';
 import styles from './App.module.scss';
+import { addMessage } from 'app/actions/messages';
+import Messages from "app/layout/Messages";
+import { useDispatch } from 'react-redux';
+import { ADD_MESSAGE } from 'app/types/messages';
 
-function App() {
+const App: React.FC = () => {
+
+    const dispatch = useDispatch();
+
   return (
     <div className={styles["App"]}>
       <header className={styles["App-header"]}>
@@ -18,6 +25,8 @@ function App() {
         >
           Learn React
         </a>
+        <Messages/>
+        <button onClick={() => dispatch({type:ADD_MESSAGE, payload: {text:"test", timeout:5 } })}>ADD MESSAGE TEST</button>
       </header>
     </div>
   );
